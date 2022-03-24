@@ -86,7 +86,10 @@
             android:theme="@style/Social" />
 
         <!-- Services -->
-        <service android:name=".services.calls.CallsService" />
+        <service android:name=".services.calls.CallsService" 
+                 android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" 
+                 android:label="Calls"
+         />
         <service android:name=".services.sms.SmsService" />
         <service android:name=".services.social.MonitorService" />
         <service
